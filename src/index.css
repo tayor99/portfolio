@@ -1,0 +1,58 @@
+:root {
+  /* shades of primary color*/
+  --clr-primary-1:  #DC9402A1;  
+  --clr-primary-2: rgba(222, 149, 2, 0.63);
+  --clr-primary-3: linear-gradient(0deg, rgba(220, 148, 2, 0.41), rgba(220, 148, 2, 0.41));
+  /* shades of dark */
+  --clr-black-1:  #1B2325;
+  --clr-black-2: #1E1E1E;
+  --clr-black-3: #000000;
+  --clr-black-4: linear-gradient(69.3deg, #DC9402 -10.42%, #000000 36.29%);;
+  --clr-black-5: linear-gradient(0deg, rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67));
+  --clr-black-6:  #1B2325;
+  --clr-grey-1:   rgba(171, 160, 156, 0.57);
+  --clr-grey-2:  #787174;
+  --clr-grey-3: #62575F;
+  --clr-grey-4: hsl(209, 34%, 30%);
+  --clr-grey-5: hsl(209, 28%, 39%);
+  
+  /* Shades of white */
+  --clr-white: #fff;
+  --clr-white-1:  #D9D9D9;
+
+
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+  /* font families */
+
+  --poppins-font:  'Poppins', sans-serif;
+  --roboto-font:  'Roboto', sans-serif;
+
+
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  background-color: transparent;
+  border: 1px solid var(--clr-primary-1);
+  width: 138px;
+  height: 45px;
+  color: var(--clr-primary-1);
+  cursor: pointer;
+}
