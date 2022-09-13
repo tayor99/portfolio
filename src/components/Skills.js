@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import ProgressBar from "./ProgressBar";
+import { tools } from "../utils/constant";
 
 const Skills = () => {
   return (
@@ -27,13 +28,16 @@ const Skills = () => {
             tincidunt massa velit.
           </p>
           <div className="skill-bar">
-            <p>Skills</p>
-            <ProgressBar />
-            <ProgressBar />
-            <ProgressBar />
-            <ProgressBar />
-            <ProgressBar />
-            <ProgressBar />
+            <p className="skillBar-header">Skills</p>
+            {tools.map((tool, index) => {
+              return (
+                <ProgressBar
+                  language={tool?.language}
+                  level={tool?.completed}
+                  key={index}
+                />
+              );
+            })}
           </div>
         </section>
       </div>
@@ -91,7 +95,7 @@ const Wrapper = styled.div`
       margin-bottom: 40px;
     }
     .skill-bar {
-      p {
+      .skillBar-header {
         color: var(--clr-black-2);
         font-family: var(--roboto-font);
         font-weight: 800;

@@ -1,6 +1,6 @@
 :root {
   /* shades of primary color*/
-  --clr-primary-1:  #DC9402A1;  
+  --clr-primary-1:   #DC9402;
   --clr-primary-2: rgba(222, 149, 2, 0.63);
   --clr-primary-3: linear-gradient(0deg, rgba(220, 148, 2, 0.41), rgba(220, 148, 2, 0.41));
   /* shades of dark */
@@ -9,6 +9,7 @@
   --clr-black-3: #000000;
   --clr-black-4: linear-gradient(69.3deg, #DC9402 -10.42%, #000000 36.29%);;
   --clr-black-5: linear-gradient(0deg, rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67));
+  --clr-black-7: rgba(0, 0, 0, 0.67);
   --clr-black-6:  #1B2325;
   --clr-grey-1:   rgba(171, 160, 156, 0.57);
   --clr-grey-2:  #787174;
@@ -32,6 +33,7 @@
 
   --poppins-font:  'Poppins', sans-serif;
   --roboto-font:  'Roboto', sans-serif;
+  --inter-font: 'Inter', sans-serif;
 
 
 }
@@ -55,4 +57,5 @@
   height: 45px;
   color: var(--clr-primary-1);
   cursor: pointer;
+  font-family: var(--poppins-font);
 }
