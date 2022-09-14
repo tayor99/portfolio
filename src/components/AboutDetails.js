@@ -126,6 +126,7 @@ const Wrapper = styled.div`
       }
     }
   }
+
   .section-b {
     width: 100%;
     padding: 40px 0;
