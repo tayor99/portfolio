@@ -1,22 +1,27 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Logo from "../assets/logo.png";
 import { links } from "../utils/constant";
 
-const Navbar = () => {
+const Nav = () => {
   return (
     <Wrapper>
       <div className="nav-logo">
         <img src={Logo} alt="logo" />
       </div>
-      <ul className="navlinks">
+      <div className="navlinks">
         {links.map((link) => {
-          return (
-            <li key={link.id}>
-              <span className="links">{link.text} </span>
-            </li>
+          return link.anchor ? (
+            <a href={link.path} key={link.id} className="links">
+              <span>{link.text}</span>
+            </a>
+          ) : (
+            <Link to={`${link.path}`} key={link.id} className="links">
+              <span> {link.text}</span>
+            </Link>
           );
         })}
-      </ul>
+      </div>
       <button>Contact me</button>
     </Wrapper>
   );
@@ -31,22 +36,21 @@ const Wrapper = styled.div`
   justify-content: space-around;
 
   .navlinks {
-    li {
-      display: inline;
+    .links {
       margin-right: 30px;
       padding: 20px 40px;
       cursor: pointer;
       transition: var(--transition);
       color: var(--clr-white);
-      .links {
-        font-weight: 400;
-        font-family: var(--poppins-font);
-        font-size: 1rem;
-        height: 100%;
-      }
+      font-weight: 400;
+      font-family: var(--poppins-font);
+      font-size: 1rem;
+      height: 100%;
+      text-decoration: none;
+      color: var(--clr-white);
       &:hover {
-        color: var(--clr-black-1);
         background-color: var(--clr-primary-1);
+        color: var(--clr-black-6);
       }
     }
   }
@@ -64,4 +68,4 @@ const Wrapper = styled.div`
   }
 `;
 
-export default Navbar;
+export default Nav;

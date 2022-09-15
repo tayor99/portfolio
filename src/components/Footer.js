@@ -3,6 +3,8 @@ import { AiOutlineFacebook } from "react-icons/ai";
 import { AiFillTwitterSquare } from "react-icons/ai";
 import { FaInstagram } from "react-icons/fa";
 import { ImLinkedin } from "react-icons/im";
+import { BsGithub } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -19,6 +21,9 @@ const Footer = () => {
           <AiFillTwitterSquare />
           <FaInstagram />
           <ImLinkedin />
+          <Link to={{ pathname: "https://github.com/tayor99" }} target="_blank">
+            <BsGithub />
+          </Link>
         </div>
       </div>
     </Wrapper>

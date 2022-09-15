@@ -1,19 +1,24 @@
 export const links = [
   {
     id: 1,
+    path: "/",
     text: "Home",
   },
   {
     id: 2,
+    path: "/about",
     text: "About",
   },
   {
     id: 3,
+    path: "/services",
     text: "Services",
   },
   {
     id: 4,
+    path: "/favicon.ico",
     text: "Resume",
+    anchor: true,
   },
 ];
 
