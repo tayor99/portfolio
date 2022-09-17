@@ -9,14 +9,18 @@ import RingLoader from "react-spinners/RingLoader";
 import styled from "styled-components";
 import { useEffect } from "react";
 
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
+
 function App() {
   let [loading, setLoading] = useState(true);
   let [color, setColor] = useState("#DC9402");
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 200);
   }, []);
+
   return (
     <>
       {loading ? (

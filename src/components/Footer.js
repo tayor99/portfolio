@@ -47,6 +47,7 @@ const Wrapper = styled.div`
         font-family: var(--inter-font);
         font-size: 0.9rem;
         font-weight: 400;
+        margin-right: 20px;
       }
     }
     .number {
@@ -54,6 +55,7 @@ const Wrapper = styled.div`
         font-family: var(--inter-font);
         font-size: 0.9rem;
         font-weight: 400;
+        margin-right: 20px;
       }
     }
     .social-links {
@@ -62,6 +64,21 @@ const Wrapper = styled.div`
         font-size: 1.3rem;
         color: var(--clr-white);
         cursor: pointer;
+      }
+    }
+  }
+  @media (max-width: 850px) {
+    .footer {
+      width: 100%;
+      justify-content: center;
+      flex-wrap: wrap;
+      .social-links {
+        svg {
+          margin-right: 15px;
+          font-size: 1.2rem;
+          color: var(--clr-white);
+          cursor: pointer;
+        }
       }
     }
   }

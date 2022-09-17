@@ -16,7 +16,7 @@ export const links = [
   },
   {
     id: 4,
-    path: "/favicon.ico",
+    path: "/Adetayo.pdf",
     text: "Resume",
     anchor: true,
   },
@@ -27,7 +27,6 @@ export const tools = [
   { language: "CSS", completed: "90" },
   { language: "JAVASCRIPT", completed: "90" },
   { language: "REACT", completed: "85" },
-  { language: "REDUX", completed: "85" },
   { language: "JQUERY", completed: "80" },
   { language: "FIREBASE", completed: "80" },
 ];

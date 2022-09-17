@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const ProgressBar = ({ level, language }) => {
-  //   console.log(level);
   return (
     language && (
       <Wrapper>
@@ -30,6 +29,11 @@ const Wrapper = styled.div`
     font-size: 1rem;
     color: #000000;
   }
+  @media (max-width: 851px) {
+    .language {
+      width: 35%;
+    }
+  }
 `;
 const ContainerStyles = styled.div`
   width: 80%;
@@ -52,6 +56,9 @@ const ContainerStyles = styled.div`
         font-weight: bold;
       }
     }
+  }
+  @media (max-width: 851px) {
+    width: 65%;
   }
 `;
 

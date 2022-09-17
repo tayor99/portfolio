@@ -109,6 +109,46 @@ const BottomWraper = styled.div`
       line-height: 1.5rem;
     }
   }
+  @media (max-width: 800px) {
+    .collaborate-header {
+      .header-text {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px 0;
+        h1 {
+          line-height: 0.9;
+        }
+        p {
+          line-height: 1.3;
+        }
+      }
+    }
+    .collaborate-body {
+      P {
+        width: 100%;
+        text-align: left;
+      }
+    }
+  }
+  @media (max-width: 560px) {
+    .collaborate-header {
+      .header-text {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px 0;
+        h1 {
+          line-height: 1.7;
+        }
+        p {
+          line-height: 1.2;
+          font-size: 2rem;
+        }
+      }
+    }
+    .collaborate-body {
+      width: 90%;
+    }
+  }
 `;
 
 export default Projects;

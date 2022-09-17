@@ -56,7 +56,7 @@ const Services = () => {
 };
 
 const Wraper = styled.div`
-  width: 100%;
+  width: 100vw;
   background-color: var(--clr-black-2);
   padding: 5% 0;
   .container {
@@ -99,7 +99,7 @@ const Wraper = styled.div`
     .service-info {
       width: 30%;
       color: var(--clr-white);
-      padding: 4% 0;
+      /* padding: 4% 0; */
       .service-header {
         font-family: var(--poppins-font);
         font-weight: 700;
@@ -111,6 +111,37 @@ const Wraper = styled.div`
         font-weight: 400;
         font-size: 0.9rem;
         line-height: 1.8;
+      }
+    }
+  }
+  @media (max-width: 800px) {
+    .container {
+      width: 95%;
+
+      .service-info {
+        width: 40%;
+      }
+    }
+  }
+  @media (max-width: 700px) {
+    .container {
+      flex-direction: column-reverse;
+      width: 80%;
+      margin: 0 auto;
+      .cards {
+        width: 100%;
+        .card {
+          width: 100%;
+        }
+      }
+      .service-info {
+        width: 100%;
+        margin-bottom: 35px;
+        .service-header {
+          font-weight: 600;
+          font-size: 2.5rem;
+          margin-bottom: 10px;
+        }
       }
     }
   }

@@ -1,13 +1,22 @@
+import { FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Logo from "../assets/logo.png";
 import { links } from "../utils/constant";
 
-const Nav = () => {
+const Nav = ({ setIsSidebarOpen }) => {
+  const openSideBar = () => {
+    setIsSidebarOpen(true);
+  };
   return (
     <Wrapper>
-      <div className="nav-logo">
-        <img src={Logo} alt="logo" />
+      <div className="logo">
+        <div className="nav-logo">
+          <img src={Logo} alt="logo" />
+        </div>
+        <button className=" nav-toggle" onClick={openSideBar}>
+          <FaBars />
+        </button>
       </div>
       <div className="navlinks">
         {links.map((link) => {
@@ -22,7 +31,7 @@ const Nav = () => {
           );
         })}
       </div>
-      <button>Contact me</button>
+      <button className="btn contact">Contact me</button>
     </Wrapper>
   );
 };
@@ -54,17 +63,34 @@ const Wrapper = styled.div`
       }
     }
   }
-  button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 16px;
+  .nav-toggle {
+    display: none;
+    border-radius: 20px;
     background-color: transparent;
     border: 1px solid var(--clr-primary-1);
-    width: 138px;
-    height: 45px;
+    width: 60px;
+    height: 50px;
     color: var(--clr-primary-1);
     cursor: pointer;
+    font-family: var(--poppins-font);
+  }
+  @media (max-width: 882px) {
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 90%;
+    }
+    .nav-toggle {
+      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .navlinks,
+    .contact {
+      display: none;
+    }
   }
 `;
 
