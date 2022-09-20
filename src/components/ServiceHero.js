@@ -29,6 +29,13 @@ const Wrapper = styled.div`
       text-decoration-color: var(--clr-primary-1);
     }
   }
+  @media (max-width: 1000px) {
+    height: 90px;
+    .service {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+  }
 `;
 
 export default ServiceHero;

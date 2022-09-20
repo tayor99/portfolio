@@ -119,6 +119,9 @@ const Wrapper = styled.div`
       }
     }
   }
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;
 
 export default Accomplishment;
