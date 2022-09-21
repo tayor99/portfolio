@@ -1,10 +1,8 @@
 import styled from "styled-components";
-import { AiOutlineFacebook } from "react-icons/ai";
 import { AiFillTwitterSquare } from "react-icons/ai";
 import { FaInstagram } from "react-icons/fa";
 import { ImLinkedin } from "react-icons/im";
 import { BsGithub } from "react-icons/bs";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -17,13 +15,32 @@ const Footer = () => {
           <p>Telephone: +2348088837613</p>
         </div>
         <div className="social-links">
-          <AiOutlineFacebook />
-          <AiFillTwitterSquare />
-          <FaInstagram />
-          <ImLinkedin />
-          <Link to={{ pathname: "https://github.com/tayor99" }} target="_blank">
+          <a
+            href="https://twitter.com/tayor_official"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <AiFillTwitterSquare />
+          </a>
+
+          <a
+            href="https://www.instagram.com/adetayor00/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaInstagram />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/adetayo-adenusi/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <ImLinkedin />
+          </a>
+          <a href="https://github.com/tayor99" target="_blank" rel="noreferrer">
             <BsGithub />
-          </Link>
+          </a>
         </div>
       </div>
     </Wrapper>

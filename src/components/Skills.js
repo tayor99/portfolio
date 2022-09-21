@@ -28,7 +28,9 @@ const Skills = () => {
             <h1>Me</h1>
           </div>
 
-          <button className="btn">View CV</button>
+          <a href="/Adetayo.pdf" className="btn">
+            View CV
+          </a>
         </div>
       </div>
       <div className="skill-right">

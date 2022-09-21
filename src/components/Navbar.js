@@ -31,7 +31,9 @@ const Nav = ({ setIsSidebarOpen }) => {
           );
         })}
       </div>
-      <button className="btn contact">Contact me</button>
+      <button className="btn contact">
+        <a href="mailto: adenusiadetayo@gmail.com">Contact me</a>
+      </button>
     </Wrapper>
   );
 };
@@ -61,6 +63,12 @@ const Wrapper = styled.div`
         background-color: var(--clr-primary-1);
         color: var(--clr-black-6);
       }
+    }
+  }
+  .contact {
+    a {
+      text-decoration: none;
+      color: var(--clr-primary-1);
     }
   }
   .nav-toggle {

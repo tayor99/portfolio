@@ -56,7 +56,7 @@ const Services = () => {
 };
 
 const Wraper = styled.div`
-  width: 100vw;
+  width: 100%;
   background-color: var(--clr-black-2);
   padding: 5% 0;
   .container {
