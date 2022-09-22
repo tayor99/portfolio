@@ -1,25 +1,10 @@
 import styled from "styled-components";
 import ProgressBar from "./ProgressBar";
 import { tools } from "../utils/constant";
-import { useRef } from "react";
-import {
-  motion,
-  useScroll,
-  useSpring,
-  useTransform,
-  MotionValue,
-} from "framer-motion";
-
-const useParallax = (value, distance) => {
-  return useTransform(value, [0, 1], [-distance, distance]);
-};
 
 const Skills = () => {
-  const ref = useRef(null);
-  const { scrollYProgress } = useScroll({ target: ref });
-  const y = useParallax(scrollYProgress, 300);
   return (
-    <Wrapper ref={ref}>
+    <Wrapper>
       <div className="skill-left">
         <div className="about-me">
           <h1>About</h1>
@@ -37,13 +22,13 @@ const Skills = () => {
         <section>
           <h1>About Me</h1>
           <p className="skill-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis et
-            mauris et fames sagittis malesuada. Lectus donec non volutpat, netus
-            laoreet. Vitae nunc imperdiet blandit odio duis a. Et habitasse quis
-            tortor massa venenatis blandit laoreet erat. Amet, hendrerit sed
-            tortor aenean massa tristique ornare eget amet. In dignissim
-            tincidunt turpis pellentesque urna morbi tortor nunc ut. Gravida
-            tincidunt massa velit.
+            A creative, technical and excellence-driven frontend web developer
+            adept in all stages of advanced web development with proven
+            expertise in design, installation, testing and maintenance of web
+            systems. Proficient in an assortment of technologies including HTML,
+            CSS, JavaScript, and React for building. A fast learner with strong
+            time management skills and ability to effectively self-manage during
+            independent projects, as well as collaborate in a team setting
           </p>
           <div className="skill-bar">
             <p className="skillBar-header">Skills</p>

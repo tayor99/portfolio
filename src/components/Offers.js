@@ -18,10 +18,10 @@ const Offers = () => {
               </h1>
               <div className="webdev-body">
                 <p className="orange-box">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
-                  dolor urna neque, porttitor non. Sollicitudin varius sit
-                  gravida massa laoreet. Massa lobortis curabitur magnis purus
-                  vitae vel nisl.
+                  I build dynamic web applications rather than just websites.
+                  Through using react i can help you with everything from
+                  integrating backend coding to front-end design and even help
+                  consume APIs.
                 </p>
               </div>
             </div>
@@ -38,10 +38,12 @@ const Offers = () => {
               </h1>
               <div className="webdev-body">
                 <p className="orange-box" style={{ textAlign: "left" }}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
-                  dolor urna neque, porttitor non. Sollicitudin varius sit
-                  gravida massa laoreet. Massa lobortis curabitur magnis purus
-                  vitae vel nisl.
+                  The web design process involves creating a site’s
+                  architecture, designing its layout and user interface, and
+                  coding it to work correctly. To give you a sense of how the
+                  web app will look after it’s finished, I create wireframes and
+                  mockups, which then can be modified based on your wishes and
+                  code development.
                 </p>
               </div>
             </div>
@@ -68,10 +70,10 @@ const Offers = () => {
               </h1>
               <div className="webdev-body">
                 <p className="orange-box">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
-                  dolor urna neque, porttitor non. Sollicitudin varius sit
-                  gravida massa laoreet. Massa lobortis curabitur magnis purus
-                  vitae vel nisl.
+                  I check how your page ranks when it comes to SEO, speed,
+                  backlinks, load times, and mobile experience and then give
+                  their alternative solutions and suggestions on how your web
+                  app’s rank can be improved
                 </p>
               </div>
             </div>

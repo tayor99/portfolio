@@ -12,7 +12,7 @@ const Footer = () => {
           <p>&#169; 2022 </p>
         </div>
         <div className="number">
-          <p>Telephone: +2348088837613</p>
+          <a href="tel:+2348088837613">Telephone: +2348088837613</a>
         </div>
         <div className="social-links">
           <a
@@ -68,11 +68,13 @@ const Wrapper = styled.div`
       }
     }
     .number {
-      p {
+      a {
         font-family: var(--inter-font);
         font-size: 0.9rem;
         font-weight: 400;
         margin-right: 20px;
+        text-decoration: none;
+        color: var(--clr-white);
       }
     }
     .social-links {

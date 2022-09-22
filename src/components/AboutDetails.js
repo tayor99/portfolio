@@ -16,15 +16,11 @@ const AboutDetails = () => {
           </div>
           <div className="card-body">
             <p className="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-              at adipiscing justo, rhoncus in massa sollicitudin velit in.
-              Laoreet tellus nam fermentum sit nec in justo ac. Dolor, at
-              pellentesque orci interdum laoreet congue hac vitae in. Commodo id
-              vitae vel, id. Sodales nisl a leo integer malesuada at egestas
-              sollicitudin gravida. Diam cras etiam pellentesque auctor
-              pellentesque. Feugiat mattis neque molestie amet integer interdum.
-              Ut augue in nisl lacus, ut dui venenatis purus. Sem tristique
-              tortor amet eleifend viverra at.
+              Knowledgeable Front End Developer adept at creating successful
+              websites that meet customer needs. Specializing in collaborating
+              with different kinds of customers to gather requirements, produce
+              plans and improve designs for usability and functionality. Fully
+              proficient in HTML, CSS, JAVASCRIPT and REACT.
             </p>
           </div>
         </div>
@@ -33,15 +29,15 @@ const AboutDetails = () => {
         <div className="card">
           <div className="card-body">
             <p className="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-              at adipiscing justo, rhoncus in massa sollicitudin velit in.
-              Laoreet tellus nam fermentum sit nec in justo ac. Dolor, at
-              pellentesque orci interdum laoreet congue hac vitae in. Commodo id
-              vitae vel, id. Sodales nisl a leo integer malesuada at egestas
-              sollicitudin gravida. Diam cras etiam pellentesque auctor
-              pellentesque. Feugiat mattis neque molestie amet integer interdum.
-              Ut augue in nisl lacus, ut dui venenatis purus. Sem tristique
-              tortor amet eleifend viverra at.
+              I have worked with a team of software developers through the
+              planning, designing, and developing web applications, Collaborated
+              with web designers to translate product requirements to build
+              user-friendly web applications, Collaborated with backend
+              engineers during the API and infrastructure designs for easy
+              consumption of APIs during product development, Efficiently
+              troubleshoot and debug problems during product testing,
+              Implemented policies and procedures related to development and
+              quality standards at all times
             </p>
           </div>
           <div className="card-header">

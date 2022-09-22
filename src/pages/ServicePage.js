@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import Offers from "../components/Offers";
 import ServiceHero from "../components/ServiceHero";
 

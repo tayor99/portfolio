@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import webImg from "../assets/web-dev-projects.png";
+import { prevProjects } from "../utils/constant";
+import { BiLinkExternal, BiGitBranch } from "react-icons/bi";
 
 const Projects = () => {
   return (
@@ -10,8 +11,33 @@ const Projects = () => {
             <span className="orange-color">Completed </span> <br /> Projects
           </h1>
           <div className="development-card">
-            <p className="web-header">Development</p>
-            <img src={webImg} alt="web-dev" className="web-body" />
+            {prevProjects.map((project) => {
+              return (
+                <div className="card">
+                  <div className="img-container">
+                    <img src={project.img} alt={project.link} />
+                  </div>
+                  <div className="links-btn">
+                    <a
+                      href={project.link}
+                      className="btn"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <BiLinkExternal />
+                    </a>
+                    <a
+                      href={project.github}
+                      className="btn"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <BiGitBranch />
+                    </a>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </TopWrapper>
@@ -29,11 +55,13 @@ const Projects = () => {
           </div>
           <div className="collaborate-body">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor,
-              pulvinar in in gravida elit enim nulla. Vestibulum integer
-              volutpat rutrum ac dolor nibh. Facilisi id sit augue morbi dolor
-              at. Volutpat at in eleifend gravida nibh elit. Etiam ullamcorper
-              pretium lacus amet quis laoreet magna tellus.
+              I can bring modern and best practices to your company. My previous
+              experience as a frontend web developer as equipped me with enough
+              experience of creating web-based applications in a fast-paced
+              environment. This experience, in addition to the knowledge I
+              gained while learning about various tools and languages for
+              building successful web-application, makes me confident that I
+              would be a valuable asset to your company
             </p>
           </div>
         </div>
@@ -62,13 +90,25 @@ const TopWrapper = styled.div`
     }
     .development-card {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      color: var(--clr-black-1);
-      .web-header {
-        font-family: var(--poppins-font);
-        font-size: 2.4rem;
-        font-weight: 500;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      .card {
+        margin: 30px 0;
+        .img-container {
+          width: 350px;
+          height: 400px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+          }
+        }
+        .links-btn {
+          display: flex;
+          justify-content: space-around;
+          margin: 30px 0;
+        }
       }
     }
   }

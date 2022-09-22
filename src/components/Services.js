@@ -7,10 +7,10 @@ const Services = () => {
         <div className="cards">
           <div className="card">
             <div className="mini-cards">
-              <h1 className="card-header">Web design</h1>
+              <h1 className="card-header">Web development</h1>
               <p className="card-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga.
-                klasjm sla.kn skln ask,nsa jln
+                I can help build dynamic web applications rather than just
+                ordinary websites
               </p>
             </div>
             <div
@@ -19,36 +19,33 @@ const Services = () => {
             >
               <h1 className="card-header">Web design</h1>
               <p className="card-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga.
-                kalja klasjn lan
+                I can create the site’s architecture, designing its layout and
+                user interface.
               </p>
             </div>
             <div
               className="mini-cards"
               style={{ background: " #DC9402", color: "#000" }}
             >
-              <h1 className="card-header">Web design</h1>
+              <h1 className="card-header">Web Maintainance</h1>
               <p className="card-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Fuga.aksn lankm lasm
+                I also offer support and maintenance for your web app after i
+                have completed your project.
               </p>
             </div>
             <div className="mini-cards">
-              <h1 className="card-header">Web design</h1>
+              <h1 className="card-header">Web optimization</h1>
               <p className="card-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga.
-                kdan akdjn ajln
+                I can help check how your page ranks when it comes to SEO,
+                speed, backlinks, load times, and mobile experience and then
+                give their alternative solutions and suggestions on how your web
+                app’s rank can be improved
               </p>
             </div>
           </div>
         </div>
         <div className="service-info">
           <h1 className="service-header">MY SERVICES</h1>
-          <p className="service-body">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus
-            dictum quam netus ac. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Netus dictum quam netus ac.
-          </p>
         </div>
       </div>
     </Wraper>
@@ -105,12 +102,6 @@ const Wraper = styled.div`
         font-weight: 700;
         font-size: 3rem;
         margin-bottom: 20px;
-      }
-      .service-body {
-        font-family: var(--roboto-fonts);
-        font-weight: 400;
-        font-size: 0.9rem;
-        line-height: 1.8;
       }
     }
   }
