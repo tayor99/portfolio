@@ -37,9 +37,8 @@ const Services = () => {
               <h1 className="card-header">Web optimization</h1>
               <p className="card-body">
                 I can help check how your page ranks when it comes to SEO,
-                speed, backlinks, load times, and mobile experience and then
-                give their alternative solutions and suggestions on how your web
-                app’s rank can be improved
+                speed, load times, and then give their alternative solutions on
+                how your web app’s rank can be improved
               </p>
             </div>
           </div>
